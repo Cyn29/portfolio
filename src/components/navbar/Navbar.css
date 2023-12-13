@@ -1,0 +1,34 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 7rem;
+    background-color: black;
+    display: flex;
+    position: sticky;
+    border-bottom: #fff 1px solid;
+    margin-bottom: 3rem;
+}
+
+.navbar-section:hover {
+    color: #FDE12D;
+}
+
+.left-section {
+    margin-left: 4.5rem;
+}
+
+.right-section {
+    margin-right: 4.5rem;
+}
+
+.github-icon, .linkedin-icon {
+    margin-left: 1rem;
+}
+
+.left-items {
+    margin-left: 2rem;
+}
+

@@ -1,0 +1,30 @@
+.footer {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    border-top: #fff 1px solid;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer img {
+    width: 2em; 
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.container {
+    max-width: 100%; 
+    margin: 0 auto;
+}
