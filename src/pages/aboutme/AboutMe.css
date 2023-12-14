@@ -1,0 +1,46 @@
+.arrow-image {
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.general-container {
+    background-color: #000000;
+    height: 100vh;
+    width: 100vw;
+}
+
+.aboutme-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+.cynthia-photo {
+    height: 20%;
+    width: 20%;
+}
+
+.aboutme-text {
+    color: #fff;
+    width: 59%;
+    font-size: 1.3rem;
+    margin-left: -15%;
+}
+
+.stack-container {
+    width: 90%;
+    border: #fff 1px solid;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+
+.stack-container img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.stack-container img:hover {
+    transform: scale(1.2);
+}

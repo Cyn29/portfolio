@@ -1,0 +1,15 @@
+.arrow-image {
+    height: 3rem;
+}
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.resume-image {
+    width: 50%;
+    height: 50%
+}

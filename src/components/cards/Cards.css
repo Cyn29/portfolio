@@ -1,0 +1,32 @@
+div.cards-container {
+    flex-wrap: wrap;
+}
+
+.card-section {
+    width: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.card-section:hover {
+    transform: scale(1.1);
+}
+
+.card-body {
+    text-align: left;
+}
+
+.card-button {
+    border-radius: 10%;
+    padding: 0.5rem;
+    background-color: #000;
+    color: #fff;
+}
+
+.card-button:hover {
+    color: #FDE12D;
+}
