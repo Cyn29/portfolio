@@ -5,8 +5,7 @@
 
 .general-container {
     background-color: #000000;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
 }
 
 .aboutme-container {
@@ -16,8 +15,9 @@
 }
 
 .cynthia-photo {
-    height: 20%;
-    width: 20%;
+    width: 250px;  
+    height: auto;
+    object-fit: contain; 
 }
 
 .aboutme-text {
@@ -28,19 +28,37 @@
 }
 
 .stack-container {
-    width: 90%;
-    border: #fff 1px solid;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 5rem;
-    margin-top: 3rem;
+        width: 90%;
+        border: #fff 1px solid;
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 5%;
+        margin-top: 3rem;
 }
 
 .stack-container img {
+    max-width: 100%;
+    height: auto;
     transition: transform 0.3s ease-in-out;
 }
 
 .stack-container img:hover {
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 1000px) {
+    .cynthia-photo {
+        width: 150px;
+    }
+    .stack-container {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cynthia-photo {
+        display: none;
+    }
 }
