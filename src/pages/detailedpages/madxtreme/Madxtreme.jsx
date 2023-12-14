@@ -1,6 +1,6 @@
 import React from 'react';
 import arrow from "../../../assets/icons/arrow.png"
-import madxtremevideo from "../../../assets/videos/demomadxtreme.mp4";
+import madxtremevideo from "../../../assets/videos/madxtreme.mp4";
 import "../Detailedpage.css";
 import { Link } from 'react-router-dom';
 
