@@ -1,6 +1,6 @@
 import React from 'react';
 import arrow from "../../../assets/icons/arrow.png"
-import atuspiesvideo from "../../../assets/videos/demoatuspies.mp4";
+import atuspiesvideo from "../../../assets/videos/atuspies.mp4";
 import { Link } from 'react-router-dom';
 
 function Atuspies() {
