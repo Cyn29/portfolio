@@ -1,15 +1,18 @@
 import Card from "react-bootstrap/Card";
 import "./Cards.css";
 import PropTypes from "prop-types";
+import { Link } from 'react-router-dom';
 
-function Cards({ image, title, description, link }) {
+function Cards({ image, title, description, link, route }) {
     return (
         <Card className="card-section">
             <Card.Img variant="top" src={image} />
             <Card.Body className="card-body">
                 <Card.Title>{title}</Card.Title>
                 <Card.Text>{description}</Card.Text>
-                <button className="card-button" variant="dark">{link}</button>
+                <Link to={route}>
+                    <button className="card-button" variant="dark">{link}</button>
+                </Link>
             </Card.Body>
         </Card>
     );

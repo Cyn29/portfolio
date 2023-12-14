@@ -1,3 +1,7 @@
+.arrow-image {
+    height: 3rem;
+}
+
 .resume-container {
     display: flex;
     justify-content: center;

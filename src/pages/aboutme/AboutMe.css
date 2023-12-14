@@ -24,7 +24,7 @@
     color: #fff;
     width: 59%;
     font-size: 1.3rem;
-    margin-left: -15%; /* Ajusta este valor según lo necesites */
+    margin-left: -15%;
 }
 
 .stack-container {
@@ -39,10 +39,8 @@
 
 .stack-container img {
     transition: transform 0.3s ease-in-out;
-    transition: filter 0.3s ease-in-out;
 }
 
 .stack-container img:hover {
     transform: scale(1.2);
-    filter: brightness(1.5);
 }

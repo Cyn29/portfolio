@@ -3,8 +3,11 @@ import Root from "./Root.jsx";
 import Home from "../pages/home/Home.jsx";
 import AboutMe from "../pages/aboutme/AboutMe.jsx"
 import Resume from "../pages/resume/Resume.jsx";
-import OrangePage from "../pages/orange/Orange.jsx";
-import MadxtremeCarousel from "../pages/madxtreme/Madxtreme.jsx";
+import OrangeDigitalCenter from "../pages/detailedpages/orange/Orange.jsx";
+import Madxtreme from "../pages/detailedpages/madxtreme/Madxtreme.jsx"
+import Atuspies from "../pages/detailedpages/atuspies/Atuspies.jsx"
+import Catchacoder from "../pages/detailedpages/catchacoder/Catchacoder.jsx"
+import Sportforall from "../pages/detailedpages/sportforall/Sportforall.jsx"
 
 const router = createBrowserRouter([
     {
@@ -24,12 +27,24 @@ const router = createBrowserRouter([
                 element: <Resume />
             },
             {
-                path: "/orangepage",
-                element: <OrangePage />
+                path: "/orangedigitalcenter",
+                element: <OrangeDigitalCenter />
             },
             {
-                path: "/madxtremepage",
-                element: <MadxtremeCarousel />
+                path: "/madxtreme",
+                element: <Madxtreme />
+            },
+            {
+                path: "/atuspies",
+                element: <Atuspies />
+            },
+            {
+                path: "/catchacoder",
+                element: <Catchacoder />
+            },
+            {
+                path: "/sportforall",
+                element: <Sportforall />
             }
         ],
     },

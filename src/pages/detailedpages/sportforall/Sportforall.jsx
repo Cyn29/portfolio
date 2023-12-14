@@ -1,0 +1,21 @@
+import React from 'react';
+import arrow from "../../../assets/icons/arrow.png"
+import sportforallvideo from "../../../assets/videos/sportforall.mp4";
+import "../Detailedpage.css";
+import { Link } from 'react-router-dom';
+
+function Sportforall() {
+    return (
+    <>
+    <div className="detailedpage-container">
+    <div className="arrow-container">
+        <Link to="/"><img className="arrow-detailedpage" src={arrow} alt="Arrow Icon" title="Volver a la home"></img></Link>
+    </div>
+    <p className="detailedpage-text">Sport for all es el trabajo de diseño y maquetación de una landing page que muestra los valores y servicios más destacados de una consultora tech.</p>
+    <video className="detailedpage-video" controls src={sportforallvideo}></video>
+    </div>
+    </>
+    );
+}
+
+export default Sportforall;
