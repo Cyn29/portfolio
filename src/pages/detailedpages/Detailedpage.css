@@ -29,6 +29,7 @@
 }
 
 .detailedpage-video {
-    width: 80%; 
-    height: 80%;
+    width: 65%; 
+    height: 65%;
+    border: 10px solid white; 
 }
