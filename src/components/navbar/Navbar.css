@@ -13,7 +13,7 @@
 }
 
 .navbar-section:hover {
-    color: #FDE12D;
+    color: #fde12d;
 }
 
 .left-section {
@@ -24,7 +24,8 @@
     margin-right: 4.5rem;
 }
 
-.github-icon, .linkedin-icon {
+.github-icon,
+.linkedin-icon {
     margin-left: 1rem;
 }
 
@@ -32,3 +33,17 @@
     margin-left: 2rem;
 }
 
+@media (max-width: 990px) {
+    .navbar-expanded {
+        min-height: 20rem;
+    }
+
+    .right-section {
+        margin-left: 3.5rem;
+    }
+
+    .github-icon {
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+}

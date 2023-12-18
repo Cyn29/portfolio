@@ -30,3 +30,9 @@ div.cards-container {
 .card-button:hover {
     color: #FDE12D;
 }
+
+@media (max-width: 990px) {
+    .card-section {
+        margin: 1rem;
+    }
+}
