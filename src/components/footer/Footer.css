@@ -28,3 +28,12 @@
     max-width: 100%; 
     margin: 0 auto;
 }
+
+.email-link {
+    text-decoration: none;
+    color: white;
+}
+
+.email-link:hover {
+    color: #FDE12D;
+}

@@ -9,14 +9,14 @@ import linkedin from "../../assets/icons/linkedin.png"
 function Header() {
 
     const symbolStyle = {
-        color: 'white',
+        color:"#FDE12D",
     };
 
     return (
         <>
             <Navbar className="navbar" data-bs-theme="dark">
                 <Container className="navbar-container">
-                    <Navbar.Brand className="navbar-section left-section">
+                    <Navbar.Brand className="left-section">
                         <span style={symbolStyle}>&lt;</span>Cynthia Álvarez<span style={symbolStyle}>&gt;</span>
                     </Navbar.Brand>
                     <Nav className="me-auto">
