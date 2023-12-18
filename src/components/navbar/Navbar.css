@@ -13,7 +13,11 @@
 }
 
 .navbar-section:hover {
-    color: #FDE12D;
+    color: #fde12d;
+}
+
+.name {
+    font-size: 2rem;
 }
 
 .left-section {
@@ -24,7 +28,8 @@
     margin-right: 4.5rem;
 }
 
-.github-icon, .linkedin-icon {
+.github-icon,
+.linkedin-icon {
     margin-left: 1rem;
 }
 
@@ -32,3 +37,44 @@
     margin-left: 2rem;
 }
 
+.navbar-toggler {
+    border: #FDE12D 3px solid;
+}
+
+@media (max-width: 990px) {
+    .navbar-section {
+        width: 10%;
+    }
+
+    .navbar-expanded {
+        min-height: 20rem;
+    }
+
+    .responsive-navbar-nav {
+        margin-left: 7rem;
+    }
+
+    .right-section {
+        margin-left: 3.5rem;
+        width: 3%;
+    }
+
+    .github-icon {
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 428px) {
+    .navbar-expanded {
+        min-height: 22rem;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .responsive-navbar-nav {
+        margin-left: 5rem;
+    }
+}

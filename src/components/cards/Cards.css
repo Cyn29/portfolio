@@ -3,7 +3,8 @@ div.cards-container {
 }
 
 .card-section {
-    width: 25rem;
+    width: 26%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     margin-left: 5rem;
@@ -29,4 +30,16 @@ div.cards-container {
 
 .card-button:hover {
     color: #FDE12D;
+}
+
+@media (max-width: 990px) {
+    .card-section {
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 475px) {
+    .card-section {
+        width: 80%;
+    }
 }

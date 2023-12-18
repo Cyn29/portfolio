@@ -5,9 +5,13 @@
     background-color: #000;
 }
 
+.arrow-link {
+    margin-left: 3rem;
+    width: 5%;
+}
+
 .arrow-detailedpage {
     height: 3rem;
-    margin-left: 3rem;
 }
 
 .detailedpage-container {
