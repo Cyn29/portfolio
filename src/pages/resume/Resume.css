@@ -1,12 +1,13 @@
 .main-resume-container {
-    background-color: #f0f0f0;
+    height: 100%;
+    background-color: rgb(253, 225, 45);
 }
 
 .arrow-resume-container {
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        background-color: #f0f0f0;
+        background-color: rgb(253, 225, 45);
 }
 
 .arrow-resume-link {

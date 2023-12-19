@@ -4,6 +4,7 @@ div.cards-container {
 
 .card-section {
     width: 26%;
+    height: 20vh; 
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +19,9 @@ div.cards-container {
 }
 
 .card-body {
-    text-align: left;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
 }
 
 .card-button {
@@ -32,14 +35,21 @@ div.cards-container {
     color: #FDE12D;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1300px) {
     .card-section {
-        margin: 1rem;
+        width: 38%;
     }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 800px) {
     .card-section {
         width: 80%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .card-section {
+        width: 60%;
     }
 }
