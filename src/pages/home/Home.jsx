@@ -13,6 +13,9 @@ function Home() {
     return (
         <div className="home-container">
         <Header />
+        <div className="title-container">
+            <h1 className="projects-title">PROYECTOS!</h1>
+        </div>
         <div className="cards-container">
         <Cards 
         image={orange}

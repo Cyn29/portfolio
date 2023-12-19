@@ -2,6 +2,16 @@
     background-color: black;
 }
 
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-title {
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
 .cards-container {
     display: flex;
     width: 100%;
