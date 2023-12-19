@@ -4,10 +4,10 @@
 }
 
 .arrow-resume-container {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        background-color: rgb(253, 225, 45);
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(253, 225, 45);
 }
 
 .arrow-resume-link {
@@ -29,4 +29,10 @@
 .resume-image {
     width: 50%;
     height: auto;
+}
+
+@media (max-width: 1234px) {
+    .main-resume-container {
+        height: 100vh;
+    }
 }
