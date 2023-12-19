@@ -8,6 +8,8 @@
     background-color: black;
     display: flex;
     position: sticky;
+    top: 0;
+    z-index: 1;
     border-bottom: #fff 1px solid;
     margin-bottom: 3rem;
 }

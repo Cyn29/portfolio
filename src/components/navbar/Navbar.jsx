@@ -6,6 +6,9 @@ import linkedin from "../../assets/icons/linkedin.png";
 import "./Navbar.css";
 
 function Header() {
+    const nameStyle = {
+        color: "#fff",
+    };
     const symbolStyle = {
         color: "#FDE12D",
     };
@@ -14,6 +17,13 @@ function Header() {
 
     const handleToggle = () => {
         setExpanded(!expanded);
+    };
+
+    const handleHomeClick = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" 
+        });
     };
 
     return (
@@ -27,8 +37,9 @@ function Header() {
                 onToggle={handleToggle}>
                 <Container className="navbar-container">
                     <Navbar.Brand className="left-section name">
-                        <span style={symbolStyle}>&lt;</span>Cynthia Álvarez
-                        <span style={symbolStyle}>&gt;</span>
+                        <span style={symbolStyle}>{'<'}</span>
+                        <span style={nameStyle}>Cynthia Álvarez</span>
+                        <span style={symbolStyle}>{'>'}</span>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse className="responsive-navbar-nav">
@@ -36,7 +47,9 @@ function Header() {
                             <Nav.Link
                                 as={Link}
                                 to="/"
-                                className="navbar-section left-section">
+                                className="navbar-section left-section"
+                                onClick={handleHomeClick} 
+                            >
                                 Home
                             </Nav.Link>
                             <Nav.Link
@@ -76,3 +89,4 @@ function Header() {
 }
 
 export default Header;
+
