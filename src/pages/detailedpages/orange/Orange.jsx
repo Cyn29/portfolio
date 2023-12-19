@@ -1,6 +1,7 @@
 import React from 'react';
 import arrow from "../../../assets/icons/arrow.png"
 import orangedigitalcentervideo from "../../../assets/videos/orangedigitalcenter.mp4";
+import "../Detailedpage.css";
 import { Link } from 'react-router-dom';
 
 function OrangeDigitalCenter() {

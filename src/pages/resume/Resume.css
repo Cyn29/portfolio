@@ -1,8 +1,21 @@
 .main-resume-container {
-    background-color: #000;
+    background-color: #f0f0f0;
 }
 
-.arrow-image {
+.arrow-resume-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        background-color: #f0f0f0;
+}
+
+.arrow-resume-link {
+    margin-left: 3rem;
+    margin-top: 1rem;
+    width: 5%;
+}
+
+.arrow-resume-image {
     height: 3rem;
 }
 

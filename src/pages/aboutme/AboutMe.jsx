@@ -16,7 +16,8 @@ import "./AboutMe.css";
 function AboutMe() {
     return (
         <div className="general-container">
-            <Link to="/">
+            <div className="arrow-aboutme-container">
+            <Link to="/" className="arrow-aboutme-link">
                 <img
                     className="arrow-image"
                     src={arrow}
@@ -24,6 +25,7 @@ function AboutMe() {
                     title="Volver a la home"
                 />
             </Link>
+            </div>
             <div className="aboutme-container">
                 <img
                     className="cynthia-photo"
@@ -52,6 +54,7 @@ function AboutMe() {
                             <li>My SQL</li>
                             <li>React Testing Library</li>
                             <li>Jest</li>
+                            <li>Supertest</li>
                         </ul>
                     </div>
                 </p>

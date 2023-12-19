@@ -1,6 +1,20 @@
+.arrow-aboutme-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #000;
+}
+
+.arrow-aboutme-link {
+        margin-left: 3rem;
+        margin-top: 1rem;
+        width: 5%;
+}
+
 .arrow-image {
     margin-left: 5%;
     margin-top: 3%;
+    height: 3rem;
 }
 
 .general-container {
@@ -28,7 +42,7 @@
 }
 
 .technologies-list {
-    column-count: 2;
+    column-count: 4;
     margin-top: 0.5rem;
 }
 
@@ -40,6 +54,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-left: 5%;
+    margin-top: 5%;
 }
 
 .stack-container img {
@@ -52,9 +67,21 @@
     transform: scale(1.2);
 }
 
+@media screen and (max-width: 1130px) {
+    .technologies-list {
+        column-count: 3;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .stack-container {
         margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .technologies-list {
+        column-count: 2;
     }
 }
 
