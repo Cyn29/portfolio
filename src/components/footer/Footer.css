@@ -13,7 +13,7 @@
 }
 
 .footer img {
-    width: 2em; 
+    width: 2em;
 }
 
 .footer-content {
@@ -25,7 +25,7 @@
 }
 
 .container {
-    max-width: 100%; 
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -35,5 +35,41 @@
 }
 
 .email-link:hover {
-    color: #FDE12D;
+    color: #fde12d;
+}
+
+@media only screen and (max-width: 500px) {
+    .footer {
+        flex-direction: column;
+    }
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer img {
+    width: 2em;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.email-link {
+    text-decoration: none;
+    color: white;
+}
+
+.email-link:hover {
+    color: #fde12d;
 }

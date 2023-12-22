@@ -1,8 +1,9 @@
-div.cards-container {
+.cards-container {
     flex-wrap: wrap;
 }
 
 .card-section {
+    position: relative;
     width: 26%;
     height: 20vh; 
     height: auto;
@@ -14,14 +15,38 @@ div.cards-container {
     transition: transform 0.3s;
 }
 
-.card-section:hover {
-    transform: scale(1.1);
+.card-image {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.3s;
 }
 
 .card-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: rgb(255, 255, 141);
+}
+
+.card-section:hover .card-body {
+    opacity: 1;
+}
+
+.card-section:hover .card-image {
+    opacity: 0;
+}
+
+.card-section:hover {
+    transform: scale(1.1);
 }
 
 .card-button {
@@ -33,6 +58,39 @@ div.cards-container {
 
 .card-button:hover {
     color: #FDE12D;
+}
+
+.bottom-images-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-image {
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card-section.clicked .card-body {
+    opacity: 1;
+}
+
+.card-section.clicked .card-image {
+    opacity: 0;
+}
+
+@media (min-width: 800px) {
+    .card-section:hover .card-body {
+        opacity: 1;
+    }
+
+    .card-section:hover .card-image {
+        opacity: 0;
+    }
+
+    .card-section.clicked .card-body,
+    .card-section.clicked .card-image {
+        opacity: initial;
+    }
 }
 
 @media (max-width: 1300px) {
