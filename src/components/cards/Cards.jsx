@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import "./Cards.css";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 function Cards({ id, image, title, description, bottomImages, link, route, clickedCard, setClickedCard }) {
+    const [doubleClicked, setDoubleClicked] = useState(false);
+
     const handleClick = (e) => {
         e.stopPropagation();
-        setClickedCard(id);
+        if (clickedCard === id) {
+            setDoubleClicked(!doubleClicked);
+        } else {
+            setClickedCard(id);
+            setDoubleClicked(false);
+        }
     };
 
     return (
         <Card
-            className={`card-section col-12 col-sm-6 col-md-3 m-2 mb-5 ${clickedCard === id ? 'clicked' : ''}`}
+            className={`card-section col-12 col-sm-6 col-md-3 m-2 mb-5 ${clickedCard === id && !doubleClicked ? 'clicked' : ''} ${clickedCard === id && doubleClicked ? 'double-clicked' : ''}`}
             onClick={handleClick}
         >
             <Card.Img variant="top" src={image} className={`card-image ${clickedCard !== id ? 'unclicked' : ''}`} />
@@ -54,5 +61,8 @@ Cards.propTypes = {
 };
 
 export default Cards;
+
+
+
 
 

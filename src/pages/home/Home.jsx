@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Header from "../../components/navbar/Navbar";
 import Cards from "../../components/cards/Cards";
 import Footer from "../../components/footer/Footer";
@@ -23,7 +23,7 @@ function Home() {
     const [clickedCard, setClickedCard] = useState(null);
 
     const handleContainerClick = () => {
-        setClickedCard(null); 
+        setClickedCard(null);
     };
 
     return (
@@ -32,7 +32,7 @@ function Home() {
             <div className="title-container">
                 <h1 className="projects-title">!PROYECTOS</h1>
             </div>
-            <div className="cards-container">
+            <div className="cards-container" onClick={e => e.stopPropagation()}>
                 <Cards
                     id="1"
                     image={madxtreme}

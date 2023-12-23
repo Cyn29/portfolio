@@ -83,6 +83,14 @@
     opacity: 0;
 }
 
+.card-section.double-clicked .card-body {
+    opacity: 0;
+}
+
+.card-section.double-clicked .card-image {
+    opacity: 1;
+}
+
 @media (max-width: 1400px) {
     .card-section {
         width: 40%;
