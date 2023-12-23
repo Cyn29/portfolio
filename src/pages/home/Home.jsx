@@ -34,7 +34,7 @@ function Home() {
             </div>
             <div className="cards-container" onClick={e => e.stopPropagation()}>
                 <Cards
-                    id="1"
+                    id={1}
                     image={madxtreme}
                     title="Madxtreme"
                     description="Web de reservas de deportes de aventura en la comunidad de Madrid. El diseño de la web se realizó en Figma y el desarrollo de la misma se hizo con React Bootstrap, React y Node.js"
@@ -45,7 +45,7 @@ function Home() {
                     setClickedCard={setClickedCard}
                 />
                 <Cards
-                    id="2"
+                    id={2}
                     image={orange}
                     title="Orange Digital Center"
                     description="Diseño y desarrollo de la interfaz del Orange Digital Center de Madrid. El diseño de la interfaz se realizó en Figma. El frontend está programado con CSS y React y el backend con TypeScript."
@@ -56,7 +56,7 @@ function Home() {
                     setClickedCard={setClickedCard}
                 />
                 <Cards
-                    id="3"
+                    id={3}
                     image={atuspies}
                     title="A tus pies"
                     description="Dashboard del administrador de un ecommerce de zapatillas deportivas. El backend del proyecto está generado con json-server y el frontend con React y React Bootstrap."
@@ -67,7 +67,7 @@ function Home() {
                     setClickedCard={setClickedCard}
                 />
                 <Cards
-                    id="4"
+                    id={4}
                     image={pokemon}
                     title="Catch a coder"
                     description="App en la que los docentes pueden seleccionar alumnos de forma aleatoria. El juego fue diseñado en Figma y a través de HTML, CSS y Javascript fueron creados los estilos y la funcionalidad."
@@ -78,7 +78,7 @@ function Home() {
                     setClickedCard={setClickedCard}
                 />
                 <Cards
-                    id="5"
+                    id={5}
                     image={sportforall}
                     title="Sport for all"
                     description="Diseño y maquetación de la landing page de una consultora tecnológica. La landing page se diseñó en Figma y se maquetó con HTML y CSS. Se usó JavaScript para añadir funcionalidad a la navbar."
