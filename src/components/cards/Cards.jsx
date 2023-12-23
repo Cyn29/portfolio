@@ -1,3 +1,4 @@
+import React from "react";
 import Card from "react-bootstrap/Card";
 import "./Cards.css";
 import PropTypes from "prop-types";
@@ -10,14 +11,14 @@ function Cards({ id, image, title, description, bottomImages, link, route, click
     };
 
     return (
-        <Card 
-            className={`card-section ${clickedCard === id ? 'clicked' : ''}`}
+        <Card
+            className={`card-section col-12 col-sm-6 col-md-3 m-2 mb-5 ${clickedCard === id ? 'clicked' : ''}`}
             onClick={handleClick}
         >
             <Card.Img variant="top" src={image} className={`card-image ${clickedCard !== id ? 'unclicked' : ''}`} />
             <Card.Body className="card-body">
-                <Card.Title>{title}</Card.Title>
-                <Card.Text>{description}</Card.Text>
+                <Card.Title className="card-text">{title}</Card.Title>
+                <Card.Text className="card-text">{description}</Card.Text>
                 {bottomImages && (
                     <div className="bottom-images-container">
                         {bottomImages.map((img, index) => (
@@ -53,4 +54,5 @@ Cards.propTypes = {
 };
 
 export default Cards;
+
 

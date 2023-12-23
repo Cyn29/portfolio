@@ -1,6 +1,6 @@
 .main-resume-container {
     height: 100%;
-    background-color: #f0f0f0;
+    background-color: rgb(255, 255, 141);
 }
 
 .arrow-resume-container {
@@ -8,7 +8,7 @@
     height: 5rem;
     display: flex;
     justify-content: flex-start;
-    background-color: #000;
+    background-color: rgb(255, 255, 141);
 }
 
 .arrow-resume-link {
@@ -25,11 +25,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 90vh;
 }
 
 .resume-image {
-    width: 50%;
-    height: auto;
+    width: 90vw;
+    height: 90vh;
+    object-fit: contain;
 }
 
 @media (max-width: 1234px) {

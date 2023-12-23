@@ -73,3 +73,17 @@
 .email-link:hover {
     color: #fde12d;
 }
+
+@media only screen and (max-width: 500px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .footer-content p:last-child {
+        margin-bottom: 1rem;
+    }
+}

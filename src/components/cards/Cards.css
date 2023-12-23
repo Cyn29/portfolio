@@ -1,23 +1,22 @@
 .cards-container {
+    display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .card-section {
     position: relative;
-    width: 26%;
-    height: 20vh; 
+    max-width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 5rem;
-    margin-bottom: 2rem;
     background-color: #fff;
     transition: transform 0.3s;
 }
 
 .card-image {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     opacity: 1;
     transition: opacity 0.3s;
 }
@@ -30,11 +29,15 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s;
     background-color: rgb(255, 255, 141);
+}
+
+.card-body > * {
+    margin-bottom: 10px;
 }
 
 .card-section:hover .card-body {
@@ -63,11 +66,13 @@
 .bottom-images-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .bottom-image {
-    margin: 1rem;
-    margin-bottom: 2rem;
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
 }
 
 .card-section.clicked .card-body {
@@ -78,36 +83,51 @@
     opacity: 0;
 }
 
-@media (min-width: 800px) {
-    .card-section:hover .card-body {
-        opacity: 1;
-    }
-
-    .card-section:hover .card-image {
-        opacity: 0;
-    }
-
-    .card-section.clicked .card-body,
-    .card-section.clicked .card-image {
-        opacity: initial;
-    }
-}
-
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     .card-section {
-        width: 38%;
+        width: 40%;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 880px) {
+    .card-section {
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
     .card-section {
         width: 80%;
-        justify-content: center;
+        height: auto;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .card-section {
-        width: 60%;
+        width: 90%;
+        height: auto;
+    }
+    .bottom-image {
+        width: 62px;
+        height: 62px;
     }
 }
+
+@media (max-width: 360px) {
+    .card-section {
+        width: 90%;
+        height: auto;
+    }
+    .card-text {
+        font-size: 0.7em;
+    }
+    .bottom-image {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+
+

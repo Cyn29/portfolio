@@ -3,7 +3,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import github from "../../assets/icons/github.png";
 import linkedin from "../../assets/icons/linkedin.png";
-import "./Navbar.css";
+import './Navbar.css'; 
 
 function Header() {
     const nameStyle = {
@@ -35,14 +35,14 @@ function Header() {
                 breakpoint="md"
                 expanded={expanded}
                 onToggle={handleToggle}>
-                <Container className="navbar-container">
-                    <Navbar.Brand className="left-section name">
+                <Container className="d-flex justify-content-between">
+                    <Navbar.Brand className="name align-self-center">
                         <span style={symbolStyle}>{'<'}</span>
                         <span style={nameStyle}>Cynthia Álvarez</span>
                         <span style={symbolStyle}>{'>'}</span>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse className="responsive-navbar-nav">
+                    <Navbar.Collapse className="justify-content-end align-self-center">
                         <Nav className="me-auto">
                             <Nav.Link
                                 as={Link}
@@ -89,4 +89,9 @@ function Header() {
 }
 
 export default Header;
+
+
+
+
+
 

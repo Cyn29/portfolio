@@ -1,44 +1,44 @@
+body {
+    background-color: #000;
+}
+
 .arrow-aboutme-container {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     background-color: #000;
+    padding: 1rem 3rem;
 }
 
 .arrow-aboutme-link {
-        margin-left: 3rem;
-        margin-top: 1rem;
-        width: 5%;
+    width: 5%;
 }
 
 .arrow-image {
-    margin-left: 5%;
-    margin-top: 3%;
     height: 3rem;
 }
 
 .general-container {
     background-color: #000000;
-    min-height: 100vh;
 }
 
 .aboutme-container {
     display: flex;
-    justify-content: space-around;
-    padding-top: 3rem;
+    justify-content: center;
+    padding-top: 1rem; 
 }
 
 .cynthia-photo {
     width: 20%;
-    height: auto;
+    height: 20%;
     object-fit: contain;
+    margin-right: 3rem;
 }
 
 .aboutme-text {
     color: #fff;
     width: 59%;
     font-size: 1.5rem;
-    margin-left: -15%;
 }
 
 .technologies-list {
@@ -53,8 +53,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: 5%;
-    margin-top: 5%;
+    margin: 5% auto;
 }
 
 .stack-container img {
@@ -74,8 +73,8 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .stack-container {
-        margin-left: 5%;
+    .aboutme-container {
+        align-items: center;
     }
 }
 
@@ -87,16 +86,12 @@
 
 @media screen and (max-width: 700px) {
     .cynthia-photo {
-        width: 15%;
-        margin-right: 3rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .cynthia-photo {
         display: none;
     }
     .technologies-list {
         column-count: 1;
+    }
+    .stack-container img {
+        padding: 0.5rem;
     }
 }
