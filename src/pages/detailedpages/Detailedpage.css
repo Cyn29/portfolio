@@ -33,7 +33,25 @@
 }
 
 .detailedpage-video {
-    width: 65%; 
-    height: 65%;
+    width: 90%;    
+    height: auto;
     border: 10px solid white; 
+}
+
+@media screen and (min-width: 600px) {
+    .detailedpage-video {
+        width: 75%; 
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .detailedpage-video {
+        width: 65%; 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .detailedpage-video {
+        width: 55%; 
+    }
 }
