@@ -28,9 +28,9 @@ function Cards({ id, image, title, description, bottomImages, link, route, click
                 <Card.Text className="card-text">{description}</Card.Text>
                 {bottomImages && (
                     <div className="bottom-images-container">
-                        {bottomImages.map((img, index) => (
+                        {bottomImages.map((img, id) => (
                             <img
-                                key={index}
+                                key={id}
                                 src={img}
                                 alt="Technology icon"
                                 className="bottom-image"

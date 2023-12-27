@@ -32,7 +32,7 @@ function Home() {
             <div className="title-container">
                 <h1 className="projects-title">!PROYECTOS</h1>
             </div>
-            <div className="cards-container" onClick={e => e.stopPropagation()}>
+            <div className="cards-container" onClick={handleContainerClick}>
                 <Cards
                     id={1}
                     image={madxtreme}

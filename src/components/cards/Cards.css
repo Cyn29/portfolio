@@ -112,28 +112,33 @@
 
 @media (max-width: 500px) {
     .card-section {
-        width: 90%;
+        width: 70%;
         height: auto;
+        margin: 0 auto;
+    }
+    .card-text {
+        font-size: 0.7em; 
     }
     .bottom-image {
-        width: 62px;
-        height: 62px;
+        width: 40px; 
+        height: 40px;
     }
 }
 
 @media (max-width: 360px) {
-    .card-section {
-        width: 90%;
-        height: auto;
-    }
     .card-text {
-        font-size: 0.7em;
+        font-size: 0.5em;
     }
     .bottom-image {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
+    }
+    .card-button {
+        padding: 0.3rem;
+        font-size: 0.7em; 
     }
 }
+
 
 
 
