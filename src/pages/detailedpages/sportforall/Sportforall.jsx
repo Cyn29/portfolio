@@ -1,7 +1,8 @@
-import React from 'react';
+/* eslint-disable react-refresh/only-export-components */
 import arrow from "../../../assets/icons/arrow.png"
 import sportforallvideo from "../../../assets/videos/sportforall.mp4";
 import { Link } from 'react-router-dom';
+import CircleAnimation from '../../../components/circleAnimation/CircleAnimation';
 
 function Sportforall() {
     return (
@@ -17,4 +18,4 @@ function Sportforall() {
     );
 }
 
-export default Sportforall;
+export default CircleAnimation(Sportforall);

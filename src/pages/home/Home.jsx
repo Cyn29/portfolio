@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { useState } from "react";
 import Header from "../../components/navbar/Navbar";
 import Cards from "../../components/cards/Cards";
@@ -18,6 +19,7 @@ import react from "../../assets/stack/react.png";
 import nodejs from "../../assets/stack/node.png";
 import typescript from "../../assets/stack/typescript.png";
 import "./Home.css";
+import CircleAnimation from "../../components/circleAnimation/CircleAnimation"
 
 function Home() {
     const [clickedCard, setClickedCard] = useState(null);
@@ -94,5 +96,5 @@ function Home() {
     );
 }
 
-export default Home;
+export default CircleAnimation(Home);
 

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/* eslint-disable react/no-unknown-property */
+import { useState } from "react";
 import Card from "react-bootstrap/Card";
 import "./Cards.css";
 import PropTypes from "prop-types";

@@ -1,8 +1,9 @@
-import React from 'react';
+/* eslint-disable react-refresh/only-export-components */
 import arrow from "../../../assets/icons/arrow.png"
 import orangedigitalcentervideo from "../../../assets/videos/orangedigitalcenter.mp4";
 import "../Detailedpage.css";
 import { Link } from 'react-router-dom';
+import CircleAnimation from '../../../components/circleAnimation/CircleAnimation';
 
 function OrangeDigitalCenter() {
     return (
@@ -18,4 +19,4 @@ function OrangeDigitalCenter() {
     );
 }
 
-export default OrangeDigitalCenter;
+export default CircleAnimation(OrangeDigitalCenter);

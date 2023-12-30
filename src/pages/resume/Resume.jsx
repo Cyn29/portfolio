@@ -1,7 +1,9 @@
+/* eslint-disable react-refresh/only-export-components */
 import resume from "../../assets/resume.png"
 import "./Resume.css"
 import arrowresume from "../../assets/icons/arrowresume.png"
 import { Link } from "react-router-dom"
+import CircleAnimation from '../../components/circleAnimation/CircleAnimation';
 
 function Resume() {
     return (
@@ -16,4 +18,4 @@ function Resume() {
     )
 }
 
-export default Resume;
+export default CircleAnimation(Resume);

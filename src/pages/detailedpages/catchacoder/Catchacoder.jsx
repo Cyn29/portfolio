@@ -1,7 +1,8 @@
-import React from 'react';
+/* eslint-disable react-refresh/only-export-components */
 import arrow from "../../../assets/icons/arrow.png"
 import catchacodervideo from "../../../assets/videos/catchacoder.mp4";
 import { Link } from 'react-router-dom';
+import CircleAnimation from '../../../components/circleAnimation/CircleAnimation';
 
 function Catchacoder() {
     return (
@@ -17,4 +18,4 @@ function Catchacoder() {
     );
 }
 
-export default Catchacoder;
+export default CircleAnimation(Catchacoder);

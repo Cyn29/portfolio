@@ -1,7 +1,8 @@
-import React from 'react';
+/* eslint-disable react-refresh/only-export-components */
 import arrow from "../../../assets/icons/arrow.png"
 import atuspiesvideo from "../../../assets/videos/atuspies.mp4";
 import { Link } from 'react-router-dom';
+import CircleAnimation from '../../../components/circleAnimation/CircleAnimation';
 
 function Atuspies() {
     return (
@@ -17,4 +18,4 @@ function Atuspies() {
     );
 }
 
-export default Atuspies;
+export default CircleAnimation(Atuspies);

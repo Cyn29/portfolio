@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/* eslint-disable react-refresh/only-export-components */
+import { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import github from "../../assets/icons/github.png";

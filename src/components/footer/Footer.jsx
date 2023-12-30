@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { Container } from "react-bootstrap";
 import github from "../../assets/icons/github.png";
 import linkedin from "../../assets/icons/linkedin.png";
@@ -23,4 +24,3 @@ function Footer() {
 }
 
 export default Footer;
-

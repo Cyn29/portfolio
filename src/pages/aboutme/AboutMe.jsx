@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react-refresh/only-export-components */
 import { Link } from "react-router-dom";
 import arrow from "../../assets/icons/arrow.png";
 import cynthia from "../../assets/cynthia.jpg";
@@ -12,6 +12,7 @@ import node from "../../assets/stack/node.png";
 import typescript from "../../assets/stack/typescript.png";
 import mysql from "../../assets/stack/mysql.png";
 import "./AboutMe.css";
+import CircleAnimation from "../../components/circleAnimation/CircleAnimation";
 
 function AboutMe() {
     return (
@@ -74,4 +75,4 @@ function AboutMe() {
     );
 }
 
-export default AboutMe;
+export default CircleAnimation(AboutMe);
