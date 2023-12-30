@@ -29,13 +29,26 @@
 }
 
 .resume-image {
-    width: 90vw;
-    height: 90vh;
+    width: 30vw;
+    height: auto;
     object-fit: contain;
 }
 
-@media (max-width: 1234px) {
+@media (max-width: 1496px) {
+    .resume-image {
+        width: 90vw;
+        height: 90vh;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 1024px) {
     .main-resume-container {
         height: 100vh;
+    }
+    .resume-image {
+        width: 90vw;
+        height: 90vh;
+        object-fit: contain;
     }
 }
