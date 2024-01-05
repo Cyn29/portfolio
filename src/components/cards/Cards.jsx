@@ -28,7 +28,7 @@ function Cards({ id, image, title, description, bottomImages, link, route, click
                 <Card.Title className="card-text">{title}</Card.Title>
                 <Card.Text className="card-text">{description}</Card.Text>
                 {bottomImages && (
-                    <div className="bottom-images-container">
+                    <section className="bottom-images-container">
                         {bottomImages.map((img, id) => (
                             <img
                                 key={id}
@@ -37,7 +37,7 @@ function Cards({ id, image, title, description, bottomImages, link, route, click
                                 className="bottom-image"
                             />
                         ))}
-                    </div>
+                    </section>
                 )}
                 <Link to={route} className="card-button" variant="dark">
                     {link}
