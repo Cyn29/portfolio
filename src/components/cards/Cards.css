@@ -57,6 +57,8 @@
     padding: 0.5rem;
     background-color: #000;
     color: #fff;
+    text-decoration: none;
+    padding: 1rem;
 }
 
 .card-button:hover {
@@ -122,6 +124,10 @@
     .bottom-image {
         width: 40px; 
         height: 40px;
+    }
+    .card-button {
+        padding: 0.7rem;
+        font-size: 0.7em; 
     }
 }
 

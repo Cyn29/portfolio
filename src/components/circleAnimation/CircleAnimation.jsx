@@ -23,7 +23,7 @@ const CircleAnimation = (WrappedComponent) => {
                     ) {
                         circle.style.opacity = '0.5'; 
                     } else {
-                        circle.style.opacity = '0.8';
+                        circle.style.opacity = '1';
                     }
                 });
             };

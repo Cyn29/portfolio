@@ -7,13 +7,13 @@ import CircleAnimation from '../../../components/circleAnimation/CircleAnimation
 function Sportforall() {
     return (
     <>
-    <div className="detailedpage-container">
-    <div className="arrow-container">
-        <Link to="/" className="arrow-link"><img className="arrow-detailedpage" src={arrow} alt="Arrow Icon" title="Volver a la home"></img></Link>
-    </div>
+    <main className="detailedpage-container">
+    <header className="arrow-container">
+        <Link to="/" className="arrow-link" aria-label="Volver a la página principal"><img className="arrow-detailedpage" src={arrow} alt="Arrow Icon" title="Volver a la home"></img></Link>
+    </header>
     <p className="detailedpage-text">Sport for all es el trabajo de diseño y maquetación de una landing page que muestra los valores y servicios más destacados de una consultora tech.</p>
     <video className="detailedpage-video" controls src={sportforallvideo}></video>
-    </div>
+    </main>
     </>
     );
 }

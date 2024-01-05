@@ -7,14 +7,16 @@ import CircleAnimation from '../../components/circleAnimation/CircleAnimation';
 
 function Resume() {
     return (
-        <div className="main-resume-container">
-        <div className="arrow-resume-container">
-        <Link to="/" className="arrow-resume-link"><img className="arrow-resume-image" src={arrowresume} alt="Arrow Icon" title="Volver a la home"></img></Link>
-        </div>
-        <div className="resume-container">
-        <img className="resume-image" src={resume}></img>
-        </div>
-        </div>
+        <section className="main-resume-container">
+            <header className="arrow-resume-container">
+                <Link to="/" className="arrow-resume-link" aria-label="Volver a la página principal">
+                    <img className="arrow-resume-image" src={arrowresume} alt="Arrow Icon" title="Volver a la home"></img>
+                </Link>
+            </header>
+            <figure className="resume-container">
+                <img className="resume-image" src={resume}></img>
+            </figure>
+        </section>
     )
 }
 

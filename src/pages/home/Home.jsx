@@ -29,12 +29,12 @@ function Home() {
     };
 
     return (
-        <div className="home-container" onClick={handleContainerClick}>
+        <main className="home-container" onClick={handleContainerClick} role="main">
             <Header />
-            <div className="title-container">
+            <header className="title-container">
                 <h1 className="projects-title">!PROYECTOS</h1>
-            </div>
-            <div className="cards-container" onClick={handleContainerClick}>
+            </header>
+            <section className="cards-container" onClick={handleContainerClick} role="region" aria-label="Cards">
                 <Cards
                     id={1}
                     image={madxtreme}
@@ -90,9 +90,9 @@ function Home() {
                     clickedCard={clickedCard}
                     setClickedCard={setClickedCard}
                 />
-            </div>
+            </section>
             <Footer />
-        </div>
+        </main>
     );
 }
 

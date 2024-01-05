@@ -39,10 +39,8 @@ function Cards({ id, image, title, description, bottomImages, link, route, click
                         ))}
                     </div>
                 )}
-                <Link to={route}>
-                    <button className="card-button" variant="dark">
-                        {link}
-                    </button>
+                <Link to={route} className="card-button" variant="dark">
+                    {link}
                 </Link>
             </Card.Body>
         </Card>

@@ -4,7 +4,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import github from "../../assets/icons/github.png";
 import linkedin from "../../assets/icons/linkedin.png";
-import './Navbar.css'; 
+import "./Navbar.css";
 
 function Header() {
     const nameStyle = {
@@ -23,12 +23,13 @@ function Header() {
     const handleHomeClick = () => {
         window.scrollTo({
             top: 0,
-            behavior: "smooth" 
+            behavior: "smooth",
         });
     };
 
     return (
         <>
+        <header>
             <Navbar
                 className={`navbar ${expanded ? "navbar-expanded" : ""}`}
                 expand="lg"
@@ -38,9 +39,9 @@ function Header() {
                 onToggle={handleToggle}>
                 <Container className="d-flex justify-content-between">
                     <Navbar.Brand className="name align-self-center">
-                        <span style={symbolStyle}>{'<'}</span>
+                        <span style={symbolStyle}>{"<"}</span>
                         <span style={nameStyle}>Cynthia Álvarez</span>
-                        <span style={symbolStyle}>{'>'}</span>
+                        <span style={symbolStyle}>{">"}</span>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse className="justify-content-end align-self-center">
@@ -49,8 +50,7 @@ function Header() {
                                 as={Link}
                                 to="/"
                                 className="navbar-section left-section"
-                                onClick={handleHomeClick} 
-                            >
+                                onClick={handleHomeClick}>
                                 Home
                             </Nav.Link>
                             <Nav.Link
@@ -69,30 +69,31 @@ function Header() {
                         <Nav className="ml-auto right-section">
                             <a
                                 href="https://github.com/Cyn29"
-                                className="github-icon"
                                 target="_blank"
                                 rel="noopener noreferrer">
-                                <img src={github} alt="GitHub Icon" />
+                                <img
+                                    src={github}
+                                    alt="GitHub Icon"
+                                    className="github-icon"
+                                />
                             </a>
                             <a
                                 href="https://www.linkedin.com/in/cynthiaalvarezrubio-fullstackdeveloper/"
-                                className="linkedin-icon"
                                 target="_blank"
                                 rel="noopener noreferrer">
-                                <img src={linkedin} alt="LinkedIn Icon" />
+                                <img
+                                    src={linkedin}
+                                    alt="LinkedIn Icon"
+                                    className="linkedin-icon"
+                                />
                             </a>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+        </header>
         </>
     );
 }
 
 export default Header;
-
-
-
-
-
-

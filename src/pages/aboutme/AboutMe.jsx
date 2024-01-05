@@ -16,8 +16,8 @@ import CircleAnimation from "../../components/circleAnimation/CircleAnimation";
 
 function AboutMe() {
     return (
-        <div className="general-container">
-            <div className="arrow-aboutme-container">
+        <main className="general-container">
+            <header className="arrow-aboutme-container">
             <Link to="/" className="arrow-aboutme-link">
                 <img
                     className="arrow-image"
@@ -26,8 +26,8 @@ function AboutMe() {
                     title="Volver a la home"
                 />
             </Link>
-            </div>
-            <div className="aboutme-container">
+            </header>
+            <section className="aboutme-container">
                 <img
                     className="cynthia-photo"
                     src={cynthia}
@@ -39,7 +39,7 @@ function AboutMe() {
                     stack de seis meses de duración. Cuento con experiencia y
                     formación trabajando con las siguientes tecnologías:
                     <br />
-                    <div className="technologies-container">
+                    <aside className="technologies-container">
                         <ul className="technologies-list">
                             <li>HTML</li>
                             <li>CSS</li>
@@ -57,10 +57,10 @@ function AboutMe() {
                             <li>Jest</li>
                             <li>Supertest</li>
                         </ul>
-                    </div>
+                    </aside>
                 </p>
-            </div>
-            <div className="stack-container">
+            </section>
+            <article className="stack-container">
                 <img src={figma} alt="Figma Icon" />
                 <img src={html} alt="HTML Icon" />
                 <img src={css} alt="CSS Icon" />
@@ -70,8 +70,8 @@ function AboutMe() {
                 <img src={node} alt="Node Icon" />
                 <img src={typescript} alt="TypeScript Icon" />
                 <img src={mysql} alt="MySQL Icon" />
-            </div>
-        </div>
+            </article>
+        </main>
     );
 }
 
