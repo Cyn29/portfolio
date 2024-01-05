@@ -16,6 +16,12 @@
     border-bottom: 1px solid #ccc;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .navbar-section {
     font-size: 1.3rem;
 }
