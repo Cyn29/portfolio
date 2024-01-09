@@ -26,7 +26,7 @@ function AboutMe() {
             <header className="arrow-aboutme-container">
                 <Link to="/" className="arrow-aboutme-link">
                     <img
-                        className="arrow-image"
+                        className={`arrow-image ${isDarkMode ? 'white-arrow' : 'black-arrow'}`}
                         src={arrow}
                         alt="Arrow Image"
                         title="Volver a la home"

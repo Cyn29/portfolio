@@ -19,7 +19,7 @@ function Madxtreme() {
                     className="arrow-link"
                     aria-label="Volver a la página principal">
                     <img
-                        className="arrow-detailedpage"
+                        className={`arrow-detailedpage ${isDarkMode ? 'white-arrow' : 'black-arrow'}`}
                         src={arrow}
                         alt="Arrow Icon"
                         title="Volver a la home"></img>
