@@ -84,7 +84,7 @@ function Header() {
                         >
                             <img
                                 src={github}
-                                alt="GitHub Icon"
+                                alt="Icono de GitHub con el enlace al perfil de Cynthia Álvarez Rubio"
                                 className={`github-icon ${isDarkMode ? "icon-dark" : "icon-light"}`}
                             />
                         </a>
@@ -95,7 +95,7 @@ function Header() {
                         >
                             <img
                                 src={linkedin}
-                                alt="LinkedIn Icon"
+                                alt="Icono de LinkedIn con el enlace al perfil de Cynthia Álvarez Rubio"
                                 className={`linkedin-icon ${isDarkMode ? "icon-dark" : "icon-light"}`}
                             />
                         </a>

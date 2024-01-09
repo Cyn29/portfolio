@@ -28,16 +28,16 @@ function AboutMe() {
                     <img
                         className={`arrow-image ${isDarkMode ? 'white-arrow' : 'black-arrow'}`}
                         src={arrow}
-                        alt="Arrow Image"
+                        alt="Icono de la flecha para volver a la home"
                         title="Volver a la home"
                     />
                 </Link>
             </header>
             <section className="aboutme-container">
                 <img
-                    className="cynthia-photo"
+                    className="cynthia-image"
                     src={cynthia}
-                    alt="Cynthia Photo"
+                    alt="Imagen de Cynthia Álvarez"
                 />
                 <p className="aboutme-text">
                     ¡Bienvenido a mi portfolio! <br />
@@ -74,15 +74,15 @@ function AboutMe() {
                 </p>
             </section>
             <article className="stack-container">
-                <img src={figma} alt="Figma Icon" />
-                <img src={html} alt="HTML Icon" />
-                <img src={css} alt="CSS Icon" />
-                <img src={javascript} alt="JavaScript Icon" />
-                <img src={react} alt="React Icon" />
-                <img src={bootstrap} alt="Bootstrap Icon" />
-                <img src={node} alt="Node Icon" />
-                <img src={typescript} alt="TypeScript Icon" />
-                <img src={mysql} alt="MySQL Icon" />
+                <img src={figma} alt="Icono de Figma" />
+                <img src={html} alt="Icono de HTML" />
+                <img src={css} alt="Icono de CSS" />
+                <img src={javascript} alt="Icono de JavaScript" />
+                <img src={react} alt="Icono de React" />
+                <img src={bootstrap} alt="Icono de Bootstrap" />
+                <img src={node} alt="Icono de Node.js" />
+                <img src={typescript} alt="Icono de TypeScript" />
+                <img src={mysql} alt="Icono de MySQL" />
             </article>
         </main>
     );

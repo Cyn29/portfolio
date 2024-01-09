@@ -21,7 +21,7 @@ function Madxtreme() {
                     <img
                         className={`arrow-detailedpage ${isDarkMode ? 'white-arrow' : 'black-arrow'}`}
                         src={arrow}
-                        alt="Arrow Icon"
+                        alt="Icono de la flecha para volver a la home"
                         title="Volver a la home"></img>
                 </Link>
             </header>

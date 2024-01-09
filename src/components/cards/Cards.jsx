@@ -33,7 +33,7 @@ function Cards({ id, image, title, description, bottomImages, link, route, click
                             <img
                                 key={id}
                                 src={img}
-                                alt="Technology icon"
+                                alt="Icono de lenguaje de programación"
                                 className="bottom-image"
                             />
                         ))}

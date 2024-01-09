@@ -17,7 +17,7 @@ function Resume() {
                     <img
                         className="arrow-resume-image"
                         src={arrowresume}
-                        alt="Arrow Icon"
+                        alt="Icono de la flecha para volver a la home"
                         title="Volver a la home"></img>
                 </Link>
                 <a href={resumepdf} target="_blank" rel="noreferrer">
