@@ -1,7 +1,5 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-/* eslint-disable react/display-name */
 import { useEffect, useRef } from 'react';
-import './CircleAnimation.css'; 
+import './CircleAnimation.css';
 
 const CircleAnimation = (WrappedComponent) => {
     const Component = (props) => {
@@ -12,19 +10,28 @@ const CircleAnimation = (WrappedComponent) => {
 
             const moveCircle = (e) => {
                 requestAnimationFrame(() => {
-                    circle.style.left = e.pageX + 'px';
-                    circle.style.top = e.pageY + 'px';
+                    const { clientX: mouseX, clientY: mouseY } = e;
 
-                    const elementMouseIsOver = e.target;
+                    const screenWidth = window.innerWidth;
+                    const screenHeight = window.innerHeight;
+                    const circleSize = 50;
 
-                    if (
-                        ['A', 'IMG', 'LI', 'H1', 'SPAN', 'P'].includes(elementMouseIsOver.nodeName) ||
-                        ['A', 'IMG', 'LI', 'H1', 'SPAN', 'P'].includes(elementMouseIsOver.parentElement?.nodeName)
-                    ) {
-                        circle.style.opacity = '0.5'; 
-                    } else {
-                        circle.style.opacity = '1';
-                    }
+                    const maxX = screenWidth - circleSize;
+                    const maxY = screenHeight - circleSize;
+
+                    let x = Math.max(0, Math.min(mouseX - circleSize / 2, maxX));
+                    let y = Math.max(0, Math.min(mouseY - circleSize / 2, maxY));
+
+                    circle.style.left = x + 'px';
+                    circle.style.top = y + 'px';
+
+                    const elementMouseIsOver = document.elementFromPoint(mouseX, mouseY);
+                    const validElementTypes = ['A', 'IMG', 'LI', 'H1', 'SPAN', 'P'];
+
+                    const isElementValid = (element) =>
+                        element && (validElementTypes.includes(element.nodeName) || validElementTypes.includes(element.parentElement?.nodeName));
+
+                    circle.style.opacity = isElementValid(elementMouseIsOver) ? '0.5' : '1';
                 });
             };
 
@@ -33,7 +40,7 @@ const CircleAnimation = (WrappedComponent) => {
             return () => {
                 document.removeEventListener('mousemove', moveCircle);
             };
-        }, []); 
+        }, []);
 
         return (
             <>
@@ -47,4 +54,3 @@ const CircleAnimation = (WrappedComponent) => {
 };
 
 export default CircleAnimation;
-

@@ -1,12 +1,11 @@
 #circle {
     height: 50px;
     width: 50px;
-    left: -25px;
-    top: -25px;
-    position: absolute;
+    position: fixed;
     background: #fff;
     border-radius: 50%;
     z-index: 1;
+    pointer-events: none;
     transition: transform 0.3s ease;
 }
 
@@ -15,4 +14,3 @@
         display: none;
     }
 }
-

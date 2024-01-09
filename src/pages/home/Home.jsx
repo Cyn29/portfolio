@@ -1,5 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ThemeContext } from '../../main';
 import Header from "../../components/navbar/Navbar";
 import Cards from "../../components/cards/Cards";
 import Footer from "../../components/footer/Footer";
@@ -23,13 +24,16 @@ import CircleAnimation from "../../components/circleAnimation/CircleAnimation"
 
 function Home() {
     const [clickedCard, setClickedCard] = useState(null);
+    const { isDarkMode } = useContext(ThemeContext);
 
     const handleContainerClick = () => {
         setClickedCard(null);
     };
 
+    const themeClass = isDarkMode ? 'dark-mode' : 'light-mode';
+
     return (
-        <main className="home-container" onClick={handleContainerClick} role="main">
+        <main className={themeClass} onClick={handleContainerClick} role="main">
             <Header />
             <header className="title-container">
                 <h1 className="projects-title">!PROYECTOS</h1>

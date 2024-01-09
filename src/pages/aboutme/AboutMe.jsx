@@ -12,20 +12,26 @@ import node from "../../assets/stack/node.png";
 import typescript from "../../assets/stack/typescript.png";
 import mysql from "../../assets/stack/mysql.png";
 import "./AboutMe.css";
+import { useContext } from "react";
+import { ThemeContext } from "../../main";
 import CircleAnimation from "../../components/circleAnimation/CircleAnimation";
 
 function AboutMe() {
+    const { isDarkMode } = useContext(ThemeContext);
+
+    const themeClass = isDarkMode ? "dark-mode" : "light-mode";
+    const emailColor = isDarkMode ? "email-dark" : "email-light";
     return (
-        <main className="general-container">
+        <main className={`general-container ${themeClass}`}>
             <header className="arrow-aboutme-container">
-            <Link to="/" className="arrow-aboutme-link">
-                <img
-                    className="arrow-image"
-                    src={arrow}
-                    alt="Arrow Image"
-                    title="Volver a la home"
-                />
-            </Link>
+                <Link to="/" className="arrow-aboutme-link">
+                    <img
+                        className="arrow-image"
+                        src={arrow}
+                        alt="Arrow Image"
+                        title="Volver a la home"
+                    />
+                </Link>
             </header>
             <section className="aboutme-container">
                 <img
@@ -36,8 +42,7 @@ function AboutMe() {
                 <p className="aboutme-text">
                     ¡Bienvenido a mi portfolio! <br />
                     Acabo de finalizar un bootcamp de programación web full
-                    stack de seis meses de duración. Cuento con experiencia y
-                    formación trabajando con las siguientes tecnologías:
+                    stack de seis meses de duración. Cuento con más de un año de experiencia en programación desarrollando proyectos con las siguientes tecnologías:
                     <br />
                     <aside className="technologies-container">
                         <ul className="technologies-list">
@@ -57,6 +62,14 @@ function AboutMe() {
                             <li>Jest</li>
                             <li>Supertest</li>
                         </ul>
+                        Para cualquier duda o consulta sobre mí puedes escribirme a{" "}
+                        <a
+                            className={`aboutme-text email-link ${emailColor}`}
+                            href="mailto:cyn2993@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            cyn2993@gmail.com
+                        </a>
                     </aside>
                 </p>
             </section>

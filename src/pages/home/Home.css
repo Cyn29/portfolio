@@ -1,5 +1,11 @@
-.home-container {
-    background-color: black;
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.light-mode {
+    background-color: #B5F8FE;
+    color: #000;
 }
 
 .title-container {
@@ -8,8 +14,8 @@
 }
 
 .projects-title {
-    color: #fff;
     margin-bottom: 3rem;
+    font-weight: bold;
 }
 
 .cards-container {

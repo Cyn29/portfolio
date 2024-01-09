@@ -4,8 +4,7 @@
 
 .navbar {
     width: 100%;
-    background-color: black;
-    display: flex;
+    display: flex;    
     position: sticky;
     top: 0;
     z-index: 1;
@@ -13,7 +12,7 @@
     padding-left: 4rem;
     padding-right: 4rem;
     height: 7rem;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 5px solid #fff;
 }
 
 .sticky {
@@ -27,7 +26,7 @@
 }
 
 .navbar-section:hover {
-    color: #fde12d;
+    color: #FAA613;
 }
 
 .name {
@@ -39,11 +38,34 @@
     margin-left: 1rem;
 }
 
+.linkedin-icon {
+    margin-right: 1rem;
+}
+
 .navbar-toggler {
-    border: #FDE12D 3px solid;
+    border: #fde12d 3px solid;
+}
+
+.light-mode .name-text {
+    color: #000;
+}
+
+.symbol {
+    color: #FAA613;
+}
+
+.icon-dark {
+    filter: invert(0);
+}
+
+.icon-light {
+    filter: invert(1);
 }
 
 @media (max-width: 990px) {
+    .theme-toggle {
+        margin-top: 1rem;
+    }
     .left-section {
         margin-left: 1rem;
     }
@@ -53,7 +75,7 @@
     }
 
     .navbar-expanded {
-        min-height: 22rem;
+        min-height: 25rem;
     }
 
     .right-section {
@@ -68,7 +90,7 @@
 
 @media (max-width: 470px) {
     .navbar-expanded {
-        min-height: 22rem;
+        min-height: 25rem;
     }
 
     .name {
@@ -76,3 +98,9 @@
     }
 }
 
+@media (max-width: 280px) {
+    .name {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
