@@ -8,7 +8,6 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    margin-bottom: 3rem;
     padding-left: 4rem;
     padding-right: 4rem;
     height: 7rem;
@@ -33,6 +32,10 @@
     font-size: 2rem;
 }
 
+.name-text:hover {
+    color: #FAA613;
+}
+
 .github-icon,
 .linkedin-icon {
     margin-left: 1rem;
@@ -46,7 +49,7 @@
     border: #fde12d 3px solid;
 }
 
-.light-mode .name-text {
+.light-mode {
     color: #000;
 }
 

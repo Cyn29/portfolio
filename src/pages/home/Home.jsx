@@ -21,6 +21,7 @@ import nodejs from "../../assets/stack/node.png";
 import typescript from "../../assets/stack/typescript.png";
 import "./Home.css";
 import CircleAnimation from "../../components/circleAnimation/CircleAnimation"
+import IntroSection from "../../components/intro/IntroSection";
 
 function Home() {
     const [clickedCard, setClickedCard] = useState(null);
@@ -32,10 +33,20 @@ function Home() {
 
     const themeClass = isDarkMode ? 'dark-mode' : 'light-mode';
 
+    const scrollToProjects = () => {
+        const projectsSection = document.getElementById("projects");
+        if (projectsSection) {
+            const yOffset = -150;
+            const y = projectsSection.getBoundingClientRect().top + window.scrollY + yOffset;
+            window.scrollTo({top: y, behavior: 'smooth'});
+        }
+    };    
+
     return (
         <main className={themeClass} onClick={handleContainerClick} role="main">
-            <Header />
-            <header className="title-container">
+            <Header/>
+            <IntroSection scrollToProjects={scrollToProjects} />
+            <header className="title-container" id="projects">
                 <h1 className="projects-title">!PROYECTOS</h1>
             </header>
             <section className="cards-container" onClick={handleContainerClick} role="region" aria-label="Cards">

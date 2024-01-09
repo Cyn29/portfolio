@@ -27,6 +27,15 @@ function Header() {
         });
     };
 
+    const handleProjectsClick = () => {
+        const projectsSection = document.getElementById("projects");
+        if (projectsSection) {
+            const yOffset = -150;
+            const y = projectsSection.getBoundingClientRect().top + window.scrollY + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+    };
+
     return (
         <Navbar
             className={`navbar ${isDarkMode ? "dark-mode" : "light-mode"} ${expanded ? "navbar-expanded" : ""}`}
@@ -36,9 +45,9 @@ function Header() {
             expanded={expanded}
             onToggle={handleNavbarToggle}>
             <Container className="d-flex justify-content-between">
-                <Navbar.Brand className="name align-self-center">
+                <Navbar.Brand  className="name" onClick={handleHomeClick}>
                     <span className="symbol">{"<"}</span>
-                    <span className="name-text">Cynthia Álvarez</span>
+                    <span className={`name-text ${isDarkMode ? "dark-mode" : "light-mode"}`}>Cynthia Álvarez</span>
                     <span className="symbol">{">"}</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -48,9 +57,9 @@ function Header() {
                             as={Link}
                             to="/"
                             className={`navbar-section left-section ${isDarkMode ? "dark-mode" : "light-mode"}`}
-                            onClick={handleHomeClick}
+                            onClick={handleProjectsClick}
                         >
-                            Home
+                            Proyectos
                         </Nav.Link>
                         <Nav.Link
                             as={Link}
