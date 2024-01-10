@@ -1,8 +1,10 @@
 .arrow-container {
+    margin-top: 1rem; 
     width: 100%;
     display: flex;
     justify-content: flex-start;
 }
+
 
 .arrow-link {
     margin-left: 3rem;
@@ -17,8 +19,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     min-height: 100vh;
+}
+
+.content-detailedpage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .detailedpage-text {

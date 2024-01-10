@@ -36,6 +36,7 @@
     height: 20%;
     object-fit: contain;
     margin-right: 3rem;
+    border-radius: 50%;
 }
 
 .aboutme-text {

@@ -27,6 +27,7 @@ function Atuspies() {
                         />
                     </Link>
                 </header>
+                <section className="content-detailedpage-container">
                 <p className="detailedpage-text">
                     El administrador del ecommerce puede ver, añadir, editar y
                     borrar productos desde su propio dashboard. La edición de
@@ -43,6 +44,7 @@ function Atuspies() {
                     className="detailedpage-video"
                     controls
                     src={atuspiesvideo}></video>
+            </section>
             </main>
         </>
     );
