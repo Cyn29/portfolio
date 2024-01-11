@@ -11,38 +11,46 @@ function OrangeDigitalCenter() {
     const { isDarkMode } = useContext(ThemeContext);
 
     const themeClass = isDarkMode ? "dark-mode" : "light-mode";
+
     return (
         <>
+            <header className={`arrow-container ${themeClass}`}>
+                <Link
+                    to="/"
+                    className="arrow-link"
+                    aria-label="Volver a la página principal">
+                    <img
+                        className={`arrow-detailedpage ${
+                            isDarkMode ? "white-arrow" : "black-arrow"
+                        }`}
+                        src={arrow}
+                        alt="Icono de la flecha para volver a la home"
+                        title="Volver a la home"
+                    />
+                </Link>
+            </header>
             <main className={`detailedpage-container ${themeClass}`}>
-                <header className="arrow-container">
-                    <Link
-                        to="/"
-                        className="arrow-link"
-                        aria-label="Volver a la página principal">
-                        <img
-                            className={`arrow-detailedpage ${isDarkMode ? 'white-arrow' : 'black-arrow'}`}
-                            src={arrow}
-                            alt="Icono de la flecha para volver a la home"
-                            title="Volver a la home"></img>
-                    </Link>
-                </header>
-                <p className="detailedpage-text">
+                <section className="content-detailedpage-container">
+                    <p className="detailedpage-text">
                     Interfaz donde los usuarios pueden suscribirse a la
                     newsletter y apuntarse a las actividades programadas, y de
                     la vista del administrador, donde una vez logueados los
-                    administradores pueden añadir, editar y eliminar actividades
+                    Los administradores pueden agregar, editar y eliminar actividades.
                     y administradores.
-                </p>
-                <a
-                    href="https://github.com/andsainz/OrangeDigitalCenter"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <button className="button-detailedpage">Ver código</button>
-                </a>
-                <video
-                    className="detailedpage-video"
-                    controls
-                    src={orangedigitalcentervideo}></video>
+                    </p>
+                    <a
+                        href="https://github.com/andsainz/OrangeDigitalCenter"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <button className="button-detailedpage">
+                            Ver código
+                        </button>
+                    </a>
+                    <video
+                        className="detailedpage-video"
+                        controls
+                        src={orangedigitalcentervideo}></video>
+                </section>
             </main>
         </>
     );

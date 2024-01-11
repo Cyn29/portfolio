@@ -29,8 +29,12 @@
     text-decoration: none;
 }
 
-.email-link:hover {
+.light-mode .email-link:hover {
     color: #FAA613;
+}
+
+.dark-mode .email-link:hover {
+    color: #fde12d;
 }
 
 .email-dark {

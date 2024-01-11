@@ -1,14 +1,14 @@
 .arrow-container {
-    margin-top: 1rem; 
+    padding-top: 1rem;  
     width: 100%;
+    height: 10%;
     display: flex;
     justify-content: flex-start;
 }
 
-
 .arrow-link {
-    margin-left: 3rem;
     width: 5%;
+    margin-left: 3rem; 
 }
 
 .arrow-detailedpage {
@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    height: 93vh;
 }
 
 .content-detailedpage-container {
@@ -35,6 +35,7 @@
     text-align: center;
     margin-bottom: 1rem;
     font-weight: bold;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
 }
 
@@ -43,9 +44,10 @@
     background-color: rgb(255, 255, 141);
     color: #000;
     font-weight: bold;
+    font-size: 1rem;
     text-decoration: none;
     border: none;
-    padding: 0.8rem;
+    padding: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -69,6 +71,6 @@
 
 @media screen and (min-width: 1200px) {
     .detailedpage-video {
-        width: 55%; 
+        width: 50%; 
     }
 }

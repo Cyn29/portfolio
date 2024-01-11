@@ -28,12 +28,20 @@
     color: #FAA613;
 }
 
+.dark-mode .navbar-section:hover {
+    color: #fde12d;
+}
+
 .name {
     font-size: 2rem;
 }
 
-.name-text:hover {
+.light-mode .name-text:hover {
     color: rgb(105, 199, 254);
+}
+
+.dark-mode .name-text:hover {
+    color: #8D98A7;
 }
 
 .github-icon,
@@ -53,8 +61,12 @@
     color: #000;
 }
 
-.symbol {
+.light-mode .symbol {
     color: #FAA613;
+}
+
+.dark-mode .symbol {
+    color: #FDE12D;
 }
 
 .icon-dark {

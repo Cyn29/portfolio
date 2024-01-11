@@ -11,37 +11,47 @@ function Madxtreme() {
     const { isDarkMode } = useContext(ThemeContext);
 
     const themeClass = isDarkMode ? "dark-mode" : "light-mode";
+
     return (
-        <main className={`detailedpage-container ${themeClass}`}>
-            <header className="arrow-container">
+        <>
+            <header className={`arrow-container ${themeClass}`}>
                 <Link
                     to="/"
                     className="arrow-link"
                     aria-label="Volver a la página principal">
                     <img
-                        className={`arrow-detailedpage ${isDarkMode ? 'white-arrow' : 'black-arrow'}`}
+                        className={`arrow-detailedpage ${
+                            isDarkMode ? "white-arrow" : "black-arrow"
+                        }`}
                         src={arrow}
                         alt="Icono de la flecha para volver a la home"
-                        title="Volver a la home"></img>
+                        title="Volver a la home"
+                    />
                 </Link>
             </header>
-            <p className="detailedpage-text">
-                Madxtreme es una web de reservas de deportes de aventura en la
-                Comunidad de Madrid donde los usuarios pueden registrarse y
-                acceder a la página logueados, reservar una actividad o
-                contactar con la empresa.
-            </p>
-            <a
-                href="https://github.com/Cyn29/madXtreme"
-                target="_blank"
-                rel="noopener noreferrer">
-                <button className="button-detailedpage">Ver código</button>
-            </a>
-            <video
-                className="detailedpage-video"
-                controls
-                src={madxtremevideo}></video>
-        </main>
+            <main className={`detailedpage-container ${themeClass}`}>
+                <section className="content-detailedpage-container">
+                    <p className="detailedpage-text">
+                    Madxtreme es una web de reservas de deportes de aventura en
+                    la Comunidad de Madrid donde los usuarios pueden registrarse
+                    y acceder a la página logueados, reservar una actividad o
+                    contactar con la empresa.
+                    </p>
+                    <a
+                        href="https://github.com/Cyn29/madXtreme"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <button className="button-detailedpage">
+                            Ver código
+                        </button>
+                    </a>
+                    <video
+                        className="detailedpage-video"
+                        controls
+                        src={madxtremevideo}></video>
+                </section>
+            </main>
+        </>
     );
 }
 
