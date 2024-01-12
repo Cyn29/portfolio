@@ -55,9 +55,9 @@ function AboutMe() {
                             <li>TypeScript</li>
                             <li>Express</li>
                             <li>Node.js</li>
-                            <li>Mongo DB</li>
+                            <li>MongoDB</li>
                             <li>SQL</li>
-                            <li>My SQL</li>
+                            <li>MySQL</li>
                             <li>React Testing Library</li>
                             <li>Jest</li>
                             <li>Supertest</li>
