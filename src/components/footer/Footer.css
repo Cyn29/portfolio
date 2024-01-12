@@ -9,6 +9,7 @@
 .footer-content {
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -55,15 +56,12 @@
         align-items: center;
         gap: 1rem;
     }
-    .footer-content p:last-child {
-        margin-bottom: 1rem;
-    }
     .copyright-text {
-        margin-top: 1rem;
+        margin-bottom: 0;
     }
-    
     .contact-text {
         margin-top: 0;
+        margin-bottom: 0;
     }
 }
 

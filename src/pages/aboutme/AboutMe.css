@@ -91,6 +91,12 @@
     }
 }
 
+@media screen and (max-width: 1300px) {
+    .general-container {
+        height: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .general-container {
         height: 100%;

@@ -36,7 +36,14 @@ function Header() {
         }
     };
 
+    const handleNavbarClick = () => {
+        if (expanded) {
+            setExpanded(false);
+        }
+    };
+
     return (
+        <main onClick={handleNavbarClick}>
         <Navbar
             className={`navbar ${isDarkMode ? "dark-mode" : "light-mode"} ${expanded ? "navbar-expanded" : ""}`}
             expand="lg"
@@ -109,6 +116,7 @@ function Header() {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
+        </main>
     );
 }
 

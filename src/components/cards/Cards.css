@@ -40,6 +40,10 @@
     margin-bottom: 10px;
 }
 
+.card-text {
+    font-size: 1em; /* ajusta esto a lo que necesites */
+}
+
 .card-section:hover .card-body {
     opacity: 1;
 }
@@ -136,8 +140,8 @@
         font-size: 0.5em;
     }
     .bottom-image {
-        width: 20px;
-        height: 20px;
+        width: 22px;
+        height: 22px;
     }
     .card-button {
         padding: 0.3rem;
