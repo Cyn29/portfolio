@@ -41,7 +41,7 @@
 }
 
 .card-text {
-    font-size: 1em; /* ajusta esto a lo que necesites */
+    font-size: 1em;
 }
 
 .card-section:hover .card-body {
