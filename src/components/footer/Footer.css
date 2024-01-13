@@ -3,7 +3,14 @@
     display: flex;
     align-items: center;
     background-color: #000;
-    border-top: #fff 5px solid;
+}
+
+.light-mode .footer {
+    border-top: #000 3px solid;
+}
+
+.dark-mode .footer {
+    border-top: #fff 3px solid;
 }
 
 .footer-content {

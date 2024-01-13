@@ -11,7 +11,14 @@
     padding-left: 4rem;
     padding-right: 4rem;
     height: 7rem;
-    border-bottom: 5px solid #fff;
+}
+
+.light-mode .navbar {
+    border-bottom: 3px solid #000;
+}
+
+.dark-mode .navbar {
+    border-bottom: 3px solid #fff;
 }
 
 .sticky {
@@ -53,8 +60,12 @@
     margin-right: 1rem;
 }
 
-.navbar-toggler {
-    border: #fde12d 3px solid;
+.light-mode button.navbar-toggler {
+    background-color: #4E8098;
+}
+
+.dark-mode button.navbar-toggler {
+    background-color: #5e5f5e;
 }
 
 .light-mode {

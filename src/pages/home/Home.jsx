@@ -36,18 +36,16 @@ function Home() {
     const scrollToProjects = () => {
         const projectsSection = document.getElementById("projects");
         if (projectsSection) {
-            const yOffset = -150;
-            const y = projectsSection.getBoundingClientRect().top + window.scrollY + yOffset;
-            window.scrollTo({top: y, behavior: 'smooth'});
+            projectsSection.scrollIntoView({ behavior: 'smooth' });
         }
     };    
 
     return (
         <main className={themeClass} onClick={handleContainerClick} role="main">
-            <Header/>
+            <Header scrollToProjects={scrollToProjects} />
             <IntroSection scrollToProjects={scrollToProjects} />
-            <header className="title-container" id="projects">
-                <h1 className="projects-title">!PROYECTOS</h1>
+            <header className="title-container">
+                <h1 className="projects-title" id="projects">!PROYECTOS</h1>
             </header>
             <section className="cards-container" onClick={handleContainerClick} role="region" aria-label="Cards">
                 <Cards
