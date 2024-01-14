@@ -19,6 +19,7 @@
     height: auto;
     opacity: 1;
     transition: opacity 0.3s;
+    border-radius: 5px;
 }
 
 .card-body {
