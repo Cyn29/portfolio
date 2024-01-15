@@ -20,9 +20,7 @@ function Resume() {
                         alt="Icono de la flecha para volver a la home"
                         title="Volver a la home"></img>
                 </Link>
-                <a href={resumepdf} target="_blank" rel="noreferrer">
-                    <button className="button-download-cv" type="button">Descargar CV</button>
-                </a>
+                    <button className="button-download-cv" type="button" onClick={() => window.open(resumepdf, '_blank') }>Descargar CV</button>
             </header>   
             <figure className="resume-container">
                 <img className="resume-image" src={resume}></img>
