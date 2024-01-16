@@ -1,6 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
 import resume from "../../assets/cv/resume.png";
-import resumepdf from "../../assets/cv/CV Cynthia Álvarez Rubio.pdf";
 import "./Resume.css";
 import arrowresume from "../../assets/icons/arrowresume.png";
 import { Link } from "react-router-dom";
@@ -20,7 +19,7 @@ function Resume() {
                         alt="Icono de la flecha para volver a la home"
                         title="Volver a la home"></img>
                 </Link>
-                <a href={resumepdf} target="_blank" rel="noreferrer"z>
+                <a href="https://drive.google.com/file/d/1nS-H4ua2Hke4RJZKTv5eTPu_3O9L_IPv/view?usp=drive_link" target="_blank" rel="noreferrer"z>
                     <button className="button-download-cv" type="button">Descargar CV</button>
                 </a>
             </header>   
