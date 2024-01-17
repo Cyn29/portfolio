@@ -67,7 +67,7 @@ function Header() {
                         <span className="symbol">{">"}</span>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse className="justify-content-end align-self-center">
+                    <Navbar.Collapse className="navbar-collapse justify-content-end align-self-center">
                         <Nav className="me-auto">
                             <Nav.Link
                                 as="a"
@@ -121,6 +121,7 @@ function Header() {
                                 />
                             </a>
                             <DarkModeToggle
+                                id="theme-toggle"
                                 className="theme-toggle"
                                 onChange={handleToggle}
                                 checked={isDarkMode}

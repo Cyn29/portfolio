@@ -4,7 +4,7 @@
 
 .navbar {
     width: 100%;
-    display: flex;    
+    display: flex;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -32,7 +32,7 @@
 }
 
 .navbar-section:hover {
-    color: #FAA613;
+    color: #faa613;
 }
 
 .dark-mode .navbar-section:hover {
@@ -48,7 +48,7 @@
 }
 
 .dark-mode .name-text:hover {
-    color: #8D98A7;
+    color: #8d98a7;
 }
 
 .github-icon,
@@ -73,11 +73,11 @@
 }
 
 .light-mode .symbol {
-    color: #FAA613;
+    color: #faa613;
 }
 
 .dark-mode .symbol {
-    color: #FDE12D;
+    color: #fde12d;
 }
 
 .icon-dark {
@@ -86,6 +86,10 @@
 
 .icon-light {
     filter: invert(1);
+}
+
+.navbar-collapse {
+    transition: none;
 }
 
 @media (max-width: 990px) {
