@@ -41,6 +41,7 @@
 
 .name {
     font-size: 2rem;
+    margin-bottom: 0.3rem;
 }
 
 .light-mode .name-text:hover {
