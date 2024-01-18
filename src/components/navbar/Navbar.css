@@ -89,6 +89,10 @@
     filter: invert(1);
 }
 
+.nav-link {
+    transition: none;
+}
+
 .navbar-collapse {
     transition: none;
 }

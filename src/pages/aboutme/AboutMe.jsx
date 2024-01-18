@@ -62,7 +62,7 @@ function AboutMe() {
                             <li>Jest</li>
                             <li>Supertest</li>
                         </ul>
-                        Para cualquier duda o consulta sobre mí puedes escribirme a{" "}
+                        Puedes escribirme a{" "}
                         <a
                             className={`aboutme-text email-link ${emailColor}`}
                             href="mailto:cyn2993@gmail.com"
