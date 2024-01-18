@@ -28,8 +28,16 @@ const CircleAnimation = (WrappedComponent) => {
                     const elementMouseIsOver = document.elementFromPoint(mouseX, mouseY);
                     const validElementTypes = ['A', 'IMG', 'LI', 'H1', 'SPAN', 'P'];
 
-                    const isElementValid = (element) =>
-                        element && (validElementTypes.includes(element.nodeName) || validElementTypes.includes(element.parentElement?.nodeName));
+                    const isElementValid = (element) => {
+                        let currentNode = element;
+                        while (currentNode) {
+                            if (validElementTypes.includes(currentNode.nodeName) || currentNode.classList.contains('dark-mode-toggle')) {
+                                return true;
+                            }
+                            currentNode = currentNode.parentElement;
+                        }
+                        return false;
+                    };
 
                     circle.style.opacity = isElementValid(elementMouseIsOver) ? '0.5' : '1';
                 });

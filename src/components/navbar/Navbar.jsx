@@ -122,7 +122,7 @@ function Header() {
                             </a>
                             <DarkModeToggle
                                 id="theme-toggle"
-                                className="theme-toggle"
+                                className="theme-toggle dark-mode-toggle"
                                 onChange={handleToggle}
                                 checked={isDarkMode}
                                 size={65}
