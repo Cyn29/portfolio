@@ -25,7 +25,7 @@ function Cards({ id, image, title, description, bottomImages, link, route, click
         >
             <Card.Img variant="top" src={image} className={`card-image ${clickedCard !== id ? 'unclicked' : ''}`} />
             <Card.Body className="card-body">
-                <Card.Title className="card-text">{title}</Card.Title>
+                <Card.Title className="card-text card-title">{title}</Card.Title>
                 <Card.Text className="card-text">{description}</Card.Text>
                 {bottomImages && (
                     <section className="bottom-images-container">

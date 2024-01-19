@@ -5,7 +5,7 @@
 .navbar {
     width: 100%;
     display: flex;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
     padding-left: 4rem;
@@ -62,7 +62,7 @@
 }
 
 .light-mode button.navbar-toggler {
-    background-color: rgb(54, 84, 134);
+    background-color: #000;
 }
 
 .dark-mode button.navbar-toggler {
@@ -97,7 +97,30 @@
     transition: none;
 }
 
+.light-mode .navbar-nav .nav-link.active {
+    color: #000;
+}
+
+.light-mode .navbar-nav .nav-link.active:hover {
+    color: #faa613;
+}
+
+.dark-mode .navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.dark-mode .navbar-nav .nav-link.active:hover {
+    color: #fde12d;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 @media (max-width: 990px) {
+    .name {
+        margin-bottom: 0rem;
+    }
     .theme-toggle {
         margin-top: 1rem;
     }

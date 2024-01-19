@@ -10,6 +10,7 @@ import DarkModeToggle from "react-dark-mode-toggle";
 function Header() {
     const { isDarkMode, setIsDarkMode } = useContext(ThemeContext);
     const [expanded, setExpanded] = useState(false);
+    const [isProjectsActive, setIsProjectsActive] = useState(false);
 
     const handleNavbarToggle = () => {
         setExpanded(!expanded);
@@ -20,6 +21,7 @@ function Header() {
     };
 
     const handleHomeClick = () => {
+        setIsProjectsActive(false);
         window.scrollTo({
             top: 0,
             behavior: "smooth",
@@ -27,16 +29,16 @@ function Header() {
     };
 
     const scrollToProjects = () => {
-        const projectsSection = document.getElementById("projects");
-        if (projectsSection) {
-            const navbarHeight = document.querySelector(".navbar").offsetHeight;
-            const projectsSectionTop = projectsSection.offsetTop - navbarHeight;
-            window.scrollTo({
-                top: projectsSectionTop,
-                behavior: "smooth",
-            });
-        }
-    };
+    const projectsSection = document.getElementById("projects");
+    if (projectsSection) {
+        const projectsSectionTop = projectsSection.offsetTop;
+        setIsProjectsActive(true);
+        window.scrollTo({
+            top: projectsSectionTop,
+            behavior: "smooth",
+        });
+    }
+};
 
     const handleNavbarClick = () => {
         if (expanded) {
@@ -71,10 +73,10 @@ function Header() {
                         <Nav className="me-auto">
                             <Nav.Link
                                 as="a"
-                                href="#projects"
+                                to="#projects"
                                 className={`navbar-section left-section ${
                                     isDarkMode ? "dark-mode" : "light-mode"
-                                }`}
+                                } ${isProjectsActive ? "active" : ""}`}
                                 onClick={scrollToProjects}>
                                 Proyectos
                             </Nav.Link>

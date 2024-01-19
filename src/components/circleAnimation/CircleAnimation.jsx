@@ -31,7 +31,7 @@ const CircleAnimation = (WrappedComponent) => {
                     const isElementValid = (element) => {
                         let currentNode = element;
                         while (currentNode) {
-                            if (validElementTypes.includes(currentNode.nodeName) || currentNode.classList.contains('dark-mode-toggle')) {
+                            if (validElementTypes.includes(currentNode.nodeName) || currentNode.classList.contains('dark-mode-toggle') || currentNode.classList.contains('card-title')) {
                                 return true;
                             }
                             currentNode = currentNode.parentElement;
@@ -39,7 +39,7 @@ const CircleAnimation = (WrappedComponent) => {
                         return false;
                     };
 
-                    circle.style.opacity = isElementValid(elementMouseIsOver) ? '0.5' : '1';
+                    circle.style.opacity = isElementValid(elementMouseIsOver) ? '0.3' : '1';
                 });
             };
 
