@@ -19,7 +19,7 @@ function Resume() {
                         alt="Icono de la flecha para volver a la home"
                         title="Volver a la home"></img>
                 </Link>
-                <a href="https://drive.google.com/file/d/1nS-H4ua2Hke4RJZKTv5eTPu_3O9L_IPv/view?usp=drive_link" target="_blank" rel="noreferrer"z>
+                <a href="https://drive.google.com/file/d/1nS-H4ua2Hke4RJZKTv5eTPu_3O9L_IPv/view?usp=drive_link" target="_blank" rel="noreferrer">
                     <button className="button-download-cv" type="button">Descargar CV</button>
                 </a>
             </header>   
