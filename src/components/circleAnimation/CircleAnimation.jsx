@@ -1,9 +1,12 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useContext } from 'react';
+import { ThemeContext } from '../../main';
 import './CircleAnimation.css';
 
 const CircleAnimation = (WrappedComponent) => {
     const Component = (props) => {
         const circleRef = useRef(null);
+        const { isDarkMode } = useContext(ThemeContext);
+        const themeClass = isDarkMode ? 'dark-mode' : 'light-mode';
 
         useEffect(() => {
             const circle = circleRef.current;
@@ -53,7 +56,7 @@ const CircleAnimation = (WrappedComponent) => {
         return (
             <>
                 <WrappedComponent {...props} />
-                <div id="circle" ref={circleRef}></div>
+                <div id="circle" ref={circleRef} className={themeClass}></div>
             </>
         );
     };
